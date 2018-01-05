@@ -18,11 +18,24 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
 
 body {
   min-width: 320px;
 
-  font-family: "Arial", sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 24px;
