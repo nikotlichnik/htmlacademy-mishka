@@ -39,9 +39,6 @@
   width: 260px;
   height: 315px;
 
-  &--large {
-    display: none;
-  }
 }
 
 .top-product__price {
@@ -61,6 +58,8 @@
 @media (min-width: @tablet-width) {
   .top-product {
     max-width: @tablet-width;
+
+    position: relative;
   }
 
   .top-product__title-wrapper {
@@ -92,18 +91,12 @@
     width: 334px;
     height: 406px;
 
-    &--large {
-      display: block;
-    }
-
-    &--small {
-      display: none;
-    }
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
   }
 
-  .top-product__column-wrapper {
-    display: flex;
-  }
 }
 
 @media (min-width: @desktop-width) {
