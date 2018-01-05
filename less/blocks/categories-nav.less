@@ -1,0 +1,39 @@
+.categories-nav {
+  display: none;
+}
+
+.categories-nav__item {
+  padding-top: 20px;
+  margin-right: 35px;
+}
+
+.categories-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.categories-nav__link {
+  text-decoration: none;
+
+  color: @grey;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+
+  &:hover {
+    color: fade(@black, 60%);
+  }
+
+  &:active {
+    color: fade(@black, 30%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories-nav {
+    display: block;
+  }
+}

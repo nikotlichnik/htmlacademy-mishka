@@ -1,3 +1,8 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-nav__logo-wrapper {
   border-bottom: 1px solid @lightgrey;
 
@@ -36,3 +41,30 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid @lightgrey;
+  }
+
+  .main-nav__logo-wrapper {
+    border-bottom: none;
+
+    width: 370px;
+  }
+
+  .main-nav__show {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo-wrapper {
+    width: 200px;
+    order: 2;
+  }
+}
+

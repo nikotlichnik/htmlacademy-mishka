@@ -1,6 +1,9 @@
 .contacts {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  max-width: @mobile-width;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -39,9 +42,55 @@
   }
 }
 
+.contacts__map{
+  display: block;
+}
+
 .contacts__feedback {
   color: @grey;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    max-width: @tablet-width;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__info tbody{
+    font-size: 17px;
+
+    display: flex;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    max-width: @desktop-width;
+
+    position: relative;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .contacts__info tbody{
+    display: table-row-group;
+  }
+
+  .contacts__map{
+    position: absolute;
+
+    right: 0;
+    top: 0;
+  }
 }

@@ -1,6 +1,9 @@
 .comments{
   padding-top: 25px;
   padding-bottom: 50px;
+
+  max-width: @mobile-width;
+  margin: 0 auto;
 }
 
 .comments__title {
@@ -22,6 +25,8 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+
+  display: block;
 }
 
 .comments__author-login {
@@ -29,6 +34,8 @@
   font-size: 17px;
   font-weight: normal;
   line-height: 30px;
+
+  display: block;
 }
 
 .comments__toggle {
@@ -56,4 +63,58 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .comments{
+    max-width: @tablet-width;
+
+    position: relative;
+  }
+
+  .comments__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .comments__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .comments__author-name {
+    font-size: 18px;
+  }
+
+  .comments__toggles{
+    position: absolute;
+
+    right: 150px;
+    bottom: 50px;
+  }
+
+  .comments__toggle{
+    border: none;
+  }
+
+  .comments__write{
+    position: absolute;
+    top: 70px;
+    right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments{
+    max-width: @desktop-width;
+  }
+
+  .comments__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .comments__author-name {
+    font-size: 17px;
+  }
 }

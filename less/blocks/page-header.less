@@ -1,5 +1,41 @@
 .page-header {
   background-color: @white;
-
   box-shadow: inset 0 1px 0 0 @lightgrey;
+
+  max-width: @mobile-width;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.page-header__information {
+  display: none;
+
+  color: @grey;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  left: 500px;
+  bottom: 0px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    max-width: @tablet-width;
+  }
+
+  .page-header__information {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    max-width: @desktop-width;
+  }
 }

@@ -1,9 +1,9 @@
-.social{
-  border-bottom: 1px solid @footerdivider;
-}
-
 .social__list {
   list-style: none;
+
+  border-bottom: 1px solid @footerdivider;
+
+  display: flex;
 }
 
 .social__link {
@@ -25,5 +25,11 @@
 
   &--twitter {
     background-image: url("../../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    border-bottom: none;
   }
 }
