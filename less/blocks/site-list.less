@@ -23,17 +23,39 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    display: none;
+    display: flex;
+
+    position: absolute;
+
+    left: 0;
+    bottom: -80px;
+
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    border-bottom: none;
+    background-color: transparent;
+
+    font-size: 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
-    display: flex;
-    order: 1;
+    position: static;
+
+    background-color: @white;
   }
 
-  .site-list__link{
+  .site-list__link {
     border-bottom: none;
+    border-left: 1px solid @lightgrey;
+
+    font-size: 17px;
+  }
+
+  .site-list__item:first-child .site-list__link{
+    border-left: none;
   }
 }

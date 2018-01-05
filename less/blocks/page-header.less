@@ -20,8 +20,7 @@
   padding: 0;
 
   position: absolute;
-  left: 500px;
-  bottom: 0px;
+  right: 100px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,11 +30,19 @@
 
   .page-header__information {
     display: block;
+
+    bottom: -40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     max-width: @desktop-width;
+  }
+
+  .page-header__information {
+    display: block;
+
+    bottom: -20px;
   }
 }
