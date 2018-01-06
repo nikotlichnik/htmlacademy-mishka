@@ -9,8 +9,9 @@
   border-bottom: 1px solid @lightgrey;
 
   display: block;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 28px;
+  padding-left: 75px;
 
   &:hover {
     color: fade(@black, 60%);
@@ -24,11 +25,14 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
+
+    width: 350px;
 
     position: absolute;
 
-    left: 0;
-    bottom: -80px;
+    left: 31px;
+    bottom: -58px;
 
     background-color: transparent;
   }
@@ -38,7 +42,13 @@
     background-color: transparent;
 
     font-size: 15px;
+
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -46,6 +56,12 @@
     position: static;
 
     background-color: @white;
+
+    width: 475px;
+  }
+
+  .site-list__item {
+    display: flex;
   }
 
   .site-list__link {
@@ -53,9 +69,18 @@
     border-left: 1px solid @lightgrey;
 
     font-size: 17px;
+
+    padding-top: 31px;
+    padding-bottom: 34px;
+    padding-right: 36px;
+    padding-left: 35px;
   }
 
-  .site-list__item:first-child .site-list__link{
+  .site-list__item:nth-child(2n+1) .site-list__link {
+    padding-left: 50px;
+  }
+
+  .site-list__item:first-child .site-list__link {
     border-left: none;
   }
 }
