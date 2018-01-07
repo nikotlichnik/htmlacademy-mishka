@@ -1,12 +1,16 @@
 .promo {
+  background-color: @lightgrey;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center top;
 
   padding-top: 70px;
 
   max-width: @mobile-width;
+
   margin: 0 auto;
+
+  margin-bottom: 100px;
 }
 
 .promo__description {
@@ -17,7 +21,10 @@
 
   text-align: center;
 
-  margin-bottom: 120px;
+  margin: 0 auto;
+  margin-bottom: 122px;
+
+  width: 260px;
 }
 
 .promo__list {
@@ -25,6 +32,26 @@
 
   margin: 0;
   padding: 0;
+}
+
+.promo__item {
+  position: relative;
+}
+
+.promo__icon {
+  position: absolute;
+
+  opacity: 0.5;
+
+  &--interior {
+    right: 36px;
+    top: 23px;
+  }
+
+  &--toy {
+    right: 26px;
+    top: 21px;
+  }
 }
 
 .promo__link {
@@ -36,32 +63,72 @@
   text-decoration: none;
 
   display: block;
-  padding-top: 20px;
-  padding-bottom: 25px;
-
-  transition: padding-bottom 0.3s ease, padding-top 0.3s ease;
-
-  &:hover {
-    padding-top: 15px;
-    padding-bottom: 35px;
-  }
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 28px;
+  padding-right: 118px;
 
   &:active {
     color: fade(@white, 30%);
   }
+}
 
-  &--interior {
-    background-color: @lightgreen;
+.promo__link--interior {
+  background-color: @lightgreen;
+
+  &:hover {
+    background-color: #59d5bc;
   }
 
-  &--toys {
-    background-color: @darkgreen;
+  &:active {
+    background-color: #59d5bc;
   }
+}
+
+.promo__link--toys {
+  background-color: @darkgreen;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+  }
+}
+
+.promo__item:hover .promo__icon {
+  opacity: 0.7;
+}
+
+.promo__item:active .promo__icon {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
     max-width: @tablet-width;
+
+    padding-top: 151px;
+
+    position: relative;
+    z-index: -1;
+
+    &::after {
+      content: "";
+
+      display: block;
+      height: 34px;
+      width: 100%;
+
+      background-image: url("../../img/bg-zigzag-fill.svg");
+
+      position: absolute;
+      bottom: -23px;
+      background-size: 754px;
+      background-position-x: 3px;
+      background-repeat: repeat-x;
+    }
   }
 
   .promo__description {
@@ -69,28 +136,82 @@
     line-height: 50px;
     color: @black;
 
-    margin-bottom: 360px;
+    width: 530px;
+
+    margin-bottom: 373px;
+
+    br {
+      display: none;
+    }
   }
 
   .promo__list {
     display: flex;
     justify-content: center;
+
+    width: 668px;
+
+    margin: 0 auto;
+  }
+
+  .promo__item {
+    width: 334px;
+
+    display: flex;
   }
 
   .promo__link {
     font-size: 20px;
     line-height: 30px;
+
+    padding-left: 36px;
+    padding-right: 167px;
+    padding-top: 29px;
+  }
+
+  .promo__icon {
+    &--interior {
+      top: 30px;
+    }
+
+    &--toy {
+      right: 33px;
+      top: 32px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
     max-width: @desktop-width;
+    
+    padding-top: 152px;
+
+    &::after {
+      bottom: -17px;
+
+      background-size: 1263px;
+      background-position-x: 6px;
+    }
+  }
+
+  .promo__list {
+    width: 1050px;
+  }
+
+  .promo__item {
+    width: 525px;
+  }
+
+  .promo__link {
+    padding-right: 350px;
   }
 
   .promo__description {
     font-size: 53px;
     line-height: 57px;
+
+    width: 650px;
 
     margin-bottom: 360px;
   }
