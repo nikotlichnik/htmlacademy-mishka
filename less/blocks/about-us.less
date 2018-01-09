@@ -120,20 +120,55 @@
 @media (min-width: @tablet-width) {
   .about-us {
     max-width: @tablet-width;
+
+    padding-top: 49px;
+    margin-bottom: 33px;
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
+
+    margin-left: -4px;
+    margin-bottom: 43px;
   }
 
-  .about-us__column-wrapper {
+  .about-us__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .about-us__item {
     font-size: 20px;
     line-height: 22px;
+
+    width: 300px;
+    margin-right: 34px;
+    padding-bottom: 28px;
+  }
+
+  .about-us__item--eco {
+    order: 1;
+  }
+
+  .about-us__item--love {
+    order: 2;
+  }
+
+  .about-us__item--style {
+    order: 3;
+  }
+
+  .about-us__item--support {
+    order: 4;
+  }
+
+  .about-us__item--likes {
+    order: 5;
+  }
+
+  .about-us__item--gift {
+    order: 6;
   }
 }
 

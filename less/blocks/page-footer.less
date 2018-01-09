@@ -12,13 +12,17 @@
   display: none;
 }
 
-
 @media (min-width: @tablet-width) {
   .page-footer {
     max-width: @tablet-width;
 
-    display: flex;
-    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 40px;
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .page-footer__logo {
@@ -27,7 +31,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer{
+  .page-footer {
     max-width: @desktop-width;
   }
 }
