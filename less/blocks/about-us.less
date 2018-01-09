@@ -1,9 +1,9 @@
 .about-us {
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 27px;
 
   max-width: @mobile-width;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .about-us__title {
@@ -11,6 +11,11 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 27px;
 }
 
 .about-us__list {
@@ -20,11 +25,96 @@
   padding: 0;
 }
 
+.about-us__list--right li:last-child {
+  margin-bottom: 0;
+}
+
 .about-us__item {
   color: @black;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+
+  padding-top: 60px;
+  margin-bottom: 23px;
+
+  position: relative;
+}
+
+.about-us__item::before {
+  content: "";
+
+  display: block;
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+}
+
+.about-us__item--eco::before {
+  width: 33px;
+  height: 38px;
+
+  background-image: url("../../img/icon-feature-flower.svg");
+  background-size: 33px 38px;
+
+  left: 7px;
+  top: 4px;
+}
+
+.about-us__item--style::before {
+  width: 47px;
+  height: 27px;
+
+  background-image: url("../../img/icon-feature-money.svg");
+  background-size: 47px 27px;
+
+  left: 0;
+  top: 6px;
+}
+
+.about-us__item--likes::before {
+  width: 34px;
+  height: 27px;
+
+  background-image: url("../../img/icon-feature-heart.svg");
+  background-size: 34px 27px;
+
+  left: 7px;
+  top: 11px;
+}
+
+.about-us__item--love::before {
+  width: 35px;
+  height: 34px;
+
+  background-image: url("../../img/icon-feature-ball.svg");
+  background-size: 35px 34px;
+
+  left: 3px;
+  top: 8px;
+}
+
+.about-us__item--support::before {
+  width: 55px;
+  height: 23px;
+
+  background-image: url("../../img/icon-feature-rocket.svg");
+  background-size: 55px 23px;
+
+  left: -6px;
+  top: 9px;
+}
+
+.about-us__item--gift::before {
+  width: 33px;
+  height: 32px;
+
+  background-image: url("../../img/icon-feature-gift.svg");
+  background-size: 33px 32px;
+
+  left: 3px;
+  top: 7px;
 }
 
 @media (min-width: @tablet-width) {
