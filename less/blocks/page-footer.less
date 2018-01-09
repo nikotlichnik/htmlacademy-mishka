@@ -32,6 +32,15 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    max-width: @desktop-width;
+    max-width: calc(@desktop-width + 100px);
+  }
+
+  .page-footer .content-wrapper {
+    width: 1050px;
+
+    padding: 0;
+    margin: 0 auto;
+
+    justify-content: space-between;
   }
 }

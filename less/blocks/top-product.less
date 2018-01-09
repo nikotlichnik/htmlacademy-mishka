@@ -180,10 +180,21 @@
 @media (min-width: @desktop-width) {
   .top-product {
     max-width: @desktop-width;
+
+    padding-top: 121px;
+    padding-bottom: 96px;
   }
 
   .top-product__title-wrapper {
     flex-direction: row;
+    justify-content: flex-start;
+
+    margin-left: -142px;
+  }
+
+  .top-product__title {
+    margin-top: 7px;
+    margin-right: 43px;
   }
 
   .top-product__name {
@@ -191,8 +202,29 @@
     line-height: 57px;
   }
 
+  .top-product__description {
+    margin-bottom: 47px;
+  }
+
+  .top-product__parameters {
+    margin-bottom: 109px;
+  }
+
   .top-product__image {
     width: 525px;
-    height: 634px;
+    height: 636px;
+
+    right: 49px;
+    top: 70px;
+  }
+
+  .top-product::after {
+    height: 23px;
+    width: 1050px;
+
+    left: 51px;
+
+    background-position: 24px;
+    background-size: 1050px 23px;
   }
 }
