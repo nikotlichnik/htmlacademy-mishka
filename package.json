@@ -11,6 +11,8 @@
     "gulp-less": "3.3.x",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "7.0.x",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.1",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
