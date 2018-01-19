@@ -8,18 +8,14 @@
   width: 21px;
   height: 18px;
 
-  path {
-    fill: fade(@black-icon, 20%);
-  }
+  fill: fade(@black-icon, 20%);
 }
 
 .user-list__icon--search {
   width: 18px;
   height: 19px;
 
-  path {
-    fill: fade(@black-icon, 20%);
-  }
+  fill: fade(@black-icon, 20%);
 }
 
 .user-list__link {
@@ -42,11 +38,11 @@
   &:hover {
     color: fade(@black, 60%);
 
-    .user-list__icon--cart path {
+    .user-list__icon--cart {
       fill: @lightgreen;
     }
 
-    .user-list__icon--search path {
+    .user-list__icon--search {
       fill: @lightgreen;
     }
   }
@@ -54,11 +50,11 @@
   &:active {
     color: fade(@black, 30%);
 
-    .user-list__icon--cart path {
+    .user-list__icon--cart {
       fill: fade(@lightgreen, 30%);
     }
 
-    .user-list__icon--search path {
+    .user-list__icon--search {
       fill: fade(@lightgreen, 30%);
     }
   }
@@ -121,11 +117,11 @@
     order: 3;
   }
 
-  .user-list__link--search{
+  .user-list__link--search {
     padding-left: 33px;
   }
 
-  .user-list__link--cart{
+  .user-list__link--cart {
     padding-left: 85px;
   }
 }
