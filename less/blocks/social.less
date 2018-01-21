@@ -20,21 +20,19 @@
   min-width: 50px;
   min-height: 50px;
 
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.social__image {
+  fill: #231f20;
 
-  &--instagram {
-    background-image: url("../../img/icon-insta.svg");
+  &:hover {
+    fill: @footer-green;
   }
-
-  &--facebook {
-    background-image: url("../../img/icon-fb.svg");
-  }
-
-  &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
+  &:active {
+    fill: fade(@footer-green, 30%);
   }
 }
 

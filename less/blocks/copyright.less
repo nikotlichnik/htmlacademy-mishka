@@ -15,8 +15,18 @@
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    .copyright__logo-image {
+      fill: @footer-green;
+    }
+  }
+
   &:active {
     color: fade(@black, 30%);
+
+    .copyright__logo-image {
+      fill: fade(@footer-green, 30%);
+    }
   }
 }
 
@@ -26,6 +36,10 @@
   margin: 0;
   padding: 0;
   margin-right: 30px;
+}
+
+.copyright__logo-image {
+  fill: @lightgreen;
 }
 
 @media (min-width: @tablet-width) {

@@ -23,6 +23,6 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: mishka,
     map: map,
-    icon: 'img/icon-map-pin.svg'
+    icon: 'img/ic-map-pin.svg'
   });
 }

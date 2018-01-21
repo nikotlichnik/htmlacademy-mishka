@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <div style="display: none;">
+    <div class="svg-sprite" style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
@@ -192,30 +192,53 @@
           <a class="contacts__feedback button" href="#">Напишите нам</a>
         </div>
       </section>
-
-      <footer class="page-footer">
-        <div class="content-wrapper">
-          <img class="page-footer__logo" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="102" height="34">
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link social__link--instagram"><span class="visually-hidden">Инстаграм</span></a>
-              </li>
-              <li class="social__item"><a class="social__link social__link--facebook"><span class="visually-hidden">Фейсбук</span></a>
-              </li>
-              <li class="social__item"><a class="social__link social__link--twitter"><span
-                class="visually-hidden">Твиттер</span></a></li>
-            </ul>
-          </div>
-          <div class="copyright">
-            <a href="#" class="copyright__link">
-              <p class="copyright__info">Разработано</p>
-              <img class="copyright__logo-image" src="img/logo-htmlacademy.svg" width="27" height="34"
-                   alt="Логотип HTML Academy">
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <footer class="page-footer">
+      <div class="content-wrapper">
+        <a class="page-footer__logo">
+          <svg class="page-footer__logo-image" width="102" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social__image social__image--instagram" width="22" height="21">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social__image social__image--facebook" width="15" height="29">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg class="social__image social__image--twitter" width="24" height="20">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a href="#" class="copyright__link">
+            <p class="copyright__info">Разработано</p>
+            <svg class="copyright__logo-image" width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxqWDFrCM41qEVC_hat4jlOKl2b4ZgYBc&callback=initMap"

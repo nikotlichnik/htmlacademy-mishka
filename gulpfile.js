@@ -15,7 +15,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
-var htmlmin = require('gulp-htmlmin');
 
 gulp.task("style", function () {
   gulp.src("less/style.less")
@@ -50,7 +49,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("img/icon-*.svg")
+  return gulp.src(["img/icon-*.svg", "img/logo-footer.svg", "img/logo-htmlacademy.svg"])
     .pipe(svgstore(({inlineSvg: true})))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
@@ -61,7 +60,6 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    // .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
 });
 
