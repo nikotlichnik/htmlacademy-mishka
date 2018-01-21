@@ -66,21 +66,27 @@
 
   .site-list__link {
     border-bottom: none;
-    border-left: 1px solid @lightgrey;
+    border-right: 1px solid @lightgrey;
 
     font-size: 17px;
 
-    padding-top: 31px;
-    padding-bottom: 34px;
-    padding-right: 36px;
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 235px;
     padding-left: 35px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 89px;
   }
 
   .site-list__item:nth-child(2n+1) .site-list__link {
     padding-left: 50px;
   }
 
-  .site-list__item:first-child .site-list__link {
-    border-left: none;
+  .site-list__item:nth-child(even) .site-list__link {
+    border-right: none;
   }
 }
