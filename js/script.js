@@ -26,3 +26,29 @@ function initMap() {
     icon: 'img/ic-map-pin.svg'
   });
 }
+
+var openButton = document.querySelector(".top-product__order");
+var popup = document.querySelector(".add-to-cart");
+var background = document.querySelector(".add-to-cart__mute-background");
+var orderButton = document.querySelector(".add-to-cart__button");
+
+openButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("add-to-cart--show");
+});
+
+background.addEventListener("click", function (evt) {
+  popup.classList.remove("add-to-cart--show");
+});
+
+orderButton.addEventListener("click", function () {
+  popup.classList.remove("add-to-cart--show");
+});
+
+window.addEventListener("keydown", function (ev) {
+  if (ev.keyCode === 27) {
+    if(popup.classList.contains("add-to-cart--show")){
+      popup.classList.remove("add-to-cart--show");
+    }
+  }
+});

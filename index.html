@@ -241,6 +241,32 @@
         </div>
       </div>
     </footer>
+
+    <section class="add-to-cart">
+      <div class="add-to-cart__wrapper">
+        <h2 class="add-to-cart__title">Добавить в корзину</h2>
+        <p class="add-to-cart__message">Выберите размер:</p>
+        <form class="add-to-cart__form" method="GET">
+          <div class="add-to-cart__label-wrapper">
+            <p>
+              <input class="add-to-cart__radio" id="sizeS" type="radio" name="size" value="S" checked>
+              <label class="add-to-cart__label" for="sizeS">S</label>
+            </p>
+            <p>
+              <input class="add-to-cart__radio" id="sizeM" type="radio" name="size" value="M">
+              <label class="add-to-cart__label" for="sizeM">M</label>
+            </p>
+            <p>
+              <input class="add-to-cart__radio" id="sizeL" type="radio" name="size" value="L">
+              <label class="add-to-cart__label" for="sizeL">L</label>
+            </p>
+          </div>
+          <button class="button add-to-cart__button" type="submit">Добавить</button>
+        </form>
+      </div>
+      <div class="add-to-cart__mute-background"></div>
+    </section>
+
     <script src="js/script.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxqWDFrCM41qEVC_hat4jlOKl2b4ZgYBc&callback=initMap"
