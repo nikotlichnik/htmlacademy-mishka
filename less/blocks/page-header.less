@@ -26,21 +26,41 @@
 @media (min-width: @tablet-width) {
   .page-header {
     max-width: @tablet-width;
+
+    box-shadow: none;
+    background-color: transparent;
   }
+
+  //.page-header__wrapper {
+  //  width: @tablet-width;
+  //  margin: 0 auto;
+  //
+  //  position: relative;
+  //  z-index: 1;
+  //  top: -89px;
+  //}
 
   .page-header__information {
     display: block;
 
-    bottom: -39px;
+    bottom: 17px;
     right: 49px;
 
-    z-index: 1;
+    z-index: 10;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     max-width: @desktop-width;
+
+    background-color: @white;
+  }
+
+  .page-header__wrapper {
+    width: @desktop-width;
+    position: static;
+
   }
 
   .page-header__information {

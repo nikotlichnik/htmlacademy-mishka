@@ -26,14 +26,16 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
+    order: 3;
 
     width: 350px;
 
-    position: absolute;
-    z-index: 1;
-    left: 31px;
-    bottom: -58px;
+    //position: absolute;
+    //z-index: 1;
+    //left: 31px;
+    //bottom: -58px;
 
+    padding-left: 30px;
     background-color: transparent;
   }
 
@@ -55,9 +57,12 @@
   .site-list {
     position: static;
 
+    order: 1;
+
     background-color: @white;
 
     width: 475px;
+    padding-left: 0;
   }
 
   .site-list__item {
