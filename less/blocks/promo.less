@@ -153,6 +153,7 @@
 
   .promo__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     width: 668px;
@@ -167,11 +168,11 @@
 
     display: flex;
 
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
+  }
 
-    &:hover {
-      transform: translateY(-5px);
-    }
+  .promo__item:nth-last-child(-n+2):hover {
+    transform: translateY(-5px);
   }
 
   .promo__link {
