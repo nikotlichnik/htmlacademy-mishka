@@ -1,7 +1,9 @@
 var mainNav = document.querySelector(".main-nav");
 var menuButton = document.querySelector(".main-nav__toggle");
+var body = document.querySelector(".page-body");
 
 mainNav.classList.remove("main-nav--nojs");
+body.classList.remove("page-body--nojs");
 
 menuButton.addEventListener('click', function () {
   if (mainNav.classList.contains("main-nav--closed")) {
